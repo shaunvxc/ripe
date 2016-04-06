@@ -12,5 +12,5 @@ To uninstall the currently installed version of your package, and reinstall usin
 
 `$ ripe`
 
-`ripe` will automatically pass `y` to the `Proceed (y/n)` prompt for uninstalling, uninstall the package, and then reinstalls your local copy of the package using `pip install .`.
+`ripe` will automatically pass `y` to the `Proceed (y/n)` prompt for uninstalling, uninstall the package, and then reinstalls your local copy of the package using `pip install .` 
 
