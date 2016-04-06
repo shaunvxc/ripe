@@ -9,7 +9,7 @@ import subprocess
 from ripe import VERSION
 
 def run(package):
-    os.system('pip uninstall {}'.format(package))
+    os.system('echo y | pip uninstall {}'.format(package))
     os.system('pip install .')
 
 
