@@ -1,4 +1,4 @@
-# ripe [![PyPI version](https://badge.fury.io/py/ripe.svg)](https://badge.fury.io/py/ripe)
+# ripe [![PyPI version](https://badge.fury.io/py/ripe.svg)](https://badge.fury.io/py/ripe) [![forthebadge](https://img.shields.io/badge/warning-NSFW-orange.svg)](http://forthebadge.com)
 An unnecessary micro-optimization for those who (like me) spend too much time testing every little incremental change to their packages. 
 
 ## Why?
