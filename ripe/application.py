@@ -15,7 +15,7 @@ def run(package):
 
 def prepare_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('package', action='append')
+    parser.add_argument('package', nargs='?', default=os.getcwd().split('/')[-1])
     parser.add_argument('--version', action='version', version='%(prog)s ' + VERSION)
     return parser
 
@@ -28,4 +28,4 @@ def main():
         print ("Error -- repip should only be used when testing out versions of a local package, and hence NEEDS")
         print ("to be run from a `pip install .`-able location" )
     else:
-        run(args.package[0])
+        run(args.package)
