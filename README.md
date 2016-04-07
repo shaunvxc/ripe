@@ -6,27 +6,28 @@ If you find yourself in a workflow where you are continuously reinstalling local
 
 While `pip` itself offers equivalent functionality with its `--force-reinstall` flag, `ripe` will accomplish the same thing in fewer keystrokes.  
 
-## Installation
-
-`$ pip install ripe`
-
 ## Usage
 
-Run from the root-level of a package to uninstall the currently installed version, and reinstall using your local changes:
+- Run from the root-level of a package to uninstall the currently installed version, and reinstall using your local changes:
 
-`$ ripe` 
+    `$ ripe` 
 
-You can also point ripe to the package you wish to reinstall with your local changes:
+- You can also point ripe to the package you wish to reinstall with your local changes:
 
-`$ ripe packagename`
+    `$ ripe packagename`
  
- or, for more complicated paths:
+- For more complicated paths:
 
-`$ ripe /path/to/local/package`
+    `$ ripe /path/to/local/package`
 
 In all cases, `ripe` will automatically pass `y` to the `Proceed (y/n)` prompt for uninstalling.
 
 ***Note*** `ripe` must either be run from or pointed to a `pip-installable` location (it checks for `setup.py`. If it is run from elsewhere, it will tell you as much before exiting) 
+
+## Installation
+
+`$ pip install ripe`
+
 
 #### Disclaimer
 This is a little tool that uses `os.system()` to `pip uninstall` and `pip install .` the local copy of your packages onto your system (or current virtual environment).  As such this package should **only** be used locally and properly. 
