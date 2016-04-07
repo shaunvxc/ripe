@@ -23,7 +23,7 @@ def main():
     args = parser.parse_args()
 
     if not os.path.isfile(os.getcwd() + '/setup.py'):
-        print ("Error -- repip should only be used when testing out versions of a local package, and hence NEEDS")
+        print ("Error -- ripe should only be used when testing out versions of a local package, and hence NEEDS")
         print ("to be run from a `pip install .`-able location" )
     else:
         run(args.package)
