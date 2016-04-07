@@ -17,5 +17,7 @@ To uninstall the currently installed version of your package, and reinstall usin
 
 `ripe` will automatically pass `y` to the `Proceed (y/n)` prompt for uninstalling, uninstall the package, and then reinstalls your local copy of the package using `pip install .` 
 
+***Note*** `ripe` must be run from the root of a python package (it checks for `setup.py`. If it is run from elsewhere, it will tell you as much before exiting.
+
 #### Disclaimer
 This is a little tool that uses `os.system()` to `pip uninstall` and `pip install .` the local copy of your packages onto your system (or current virtual environment).  As such this package should **only** be used locally and properly. 
