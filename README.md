@@ -10,7 +10,7 @@ While `pip` itself offers equivalent functionality with its `--force-reinstall` 
 
 `$ pip install ripe`
 
-### Usage
+## Usage
 To uninstall the currently installed version of your package, and reinstall using your local changes, simply run (from the root-dir of your package):
 
 `$ ripe`
