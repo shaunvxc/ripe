@@ -11,13 +11,12 @@ While `pip` itself offers equivalent functionality with its `--force-reinstall` 
 `$ pip install ripe`
 
 ## Usage
-When run from the root folder of a package (on the same level as the `setup.py` file) as:
+
+Run from the root-level of a package to uninstall the currently installed version, and reinstall using your local changes:
 
 `$ ripe` 
 
-uninstalls the currently installed version of your package, and reinstalls it using your local changes.
-
-You can also point ripe to the package you wish to `ripen` up with your local changes. IE:
+You can also point ripe to the package you wish to `ripen` up with your local changes:
 
 `$ ripe packagename`
  
