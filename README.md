@@ -30,4 +30,4 @@ In all cases, `ripe` will automatically pass `y` to the `Proceed (y/n)` prompt f
 
 
 #### Disclaimer
-This is a little tool that uses `os.system()` to `pip uninstall` and `pip install` the local copy of your packages onto your system (or current virtual environment).  As such this package should **only** be used locally and properly. 
+This is a little tool that uses `os.system()` to `pip uninstall` and `pip install` the local copy of your package onto your system (or current virtual environment).  As such this package should **only** be used locally and properly. 
