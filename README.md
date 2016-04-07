@@ -16,11 +16,11 @@ Run from the root-level of a package to uninstall the currently installed versio
 
 `$ ripe` 
 
-You can also point ripe to the package you wish to `ripen` up with your local changes:
+You can also point ripe to the package you wish to reinstall with your local changes:
 
 `$ ripe packagename`
  
- or
+ or, for more complicated paths:
 
 `$ ripe /path/to/local/package`
 
