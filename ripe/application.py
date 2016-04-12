@@ -9,14 +9,21 @@ from ripe import VERSION
 def run(package):
     os.system('echo y | pip uninstall {}'.format(package.split('/')[-1]))
 
-    if package == os.getcwd().split('/')[-1] or package is None:
+    if point_install_to_current_dir(package):
         os.system('pip install .')
-    elif os.path.exists(os.getcwd() + '/{}'.format(package)):
-        # for shorthand, ie `ripe app_name -> pip install ./app_name`
+    elif point_install_to_child_dir(package):
         os.system('pip install ./{}'.format(package))
     else:
         # for longhand paths, ie `ripe ../../app_name`
         os.system('pip install {}'.format(os.path.expanduser(package)))
+
+
+def point_install_to_current_dir(package):
+    return (package == os.getcwd().split('/')[-1] or package is None)
+
+
+def point_install_to_child_dir(package):
+    return os.path.exists(os.getcwd() + '/{}'.format(package))
 
 
 def prepare_parser():
