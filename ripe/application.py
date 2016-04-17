@@ -6,6 +6,7 @@ import os
 
 from ripe import VERSION
 
+
 def run(package):
     os.system('echo y | pip uninstall {}'.format(package.split('/')[-1]))
 
@@ -29,7 +30,9 @@ def point_install_to_child_dir(package):
 def prepare_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('package', nargs='?', default=os.getcwd().split('/')[-1])
+    parser.add_argument('--extra-index-url', nargs='?', default = "")
     parser.add_argument('--version', action='version', version='%(prog)s ' + VERSION)
+
     return parser
 
 
@@ -41,4 +44,5 @@ def main():
         print ("Error -- ripe should only be used when testing out versions of a local package, and hence NEEDS")
         print ("to be run from or pointed towards a  `pip install .`-able location" )
     else:
-        run(args.package)
+        command = "{} {}".format(args.extra_index_url, args.package)
+        run(command.strip())
