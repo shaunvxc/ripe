@@ -19,6 +19,10 @@ While `pip` itself offers equivalent functionality with its `--force-reinstall` 
 - For more complicated paths:
 
     `$ ripe /path/to/local/package`
+    
+- For packages with dependencies not available on pypi:
+    
+    `$ ripe --extra-index-url index_url [path_to_package]`
 
 In all cases, `ripe` will automatically pass `y` to the `Proceed (y/n)` prompt for uninstalling.
 
