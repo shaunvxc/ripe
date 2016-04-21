@@ -1,6 +1,6 @@
 # ripe  [![Build Status](https://travis-ci.org/shaunvxc/ripe.svg?branch=master)](https://travis-ci.org/shaunvxc/ripe) [![PyPI version](https://badge.fury.io/py/ripe.svg)](https://badge.fury.io/py/ripe) 
 
-A micro-optimization for those who (like me) spend too much time using `--force-reinstall` or `pip uninstall`/`install` while testing every little incremental change to their packages. 
+A micro-optimization for those who (like me) spend too much time using `--force-reinstall` or `pip uninstall`/`install` while testing every incremental change to their packages. 
 
 ## Why?
 If you find yourself in a workflow where you are continuously reinstalling local copies of your packages to test out changes, you might find `ripe` to be a useful little hack.
