@@ -1,4 +1,5 @@
-# ripe  [![Build Status](https://travis-ci.org/shaunvxc/ripe.svg?branch=master)](https://travis-ci.org/shaunvxc/ripe) [![PyPI version](https://badge.fury.io/py/ripe.svg)](https://badge.fury.io/py/ripe) [![forthebadge](https://img.shields.io/badge/warning-NSFW-orange.svg)](http://forthebadge.com)
+# ripe  [![Build Status](https://travis-ci.org/shaunvxc/ripe.svg?branch=master)](https://travis-ci.org/shaunvxc/ripe) [![PyPI version](https://badge.fury.io/py/ripe.svg)](https://badge.fury.io/py/ripe) 
+
 An unnecessary micro-optimization for those who (like me) spend too much time using `--force-reinstall` or `pip uninstall`/`install` while testing every little incremental change to their packages. 
 
 ## Why?
